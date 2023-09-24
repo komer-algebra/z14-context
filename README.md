@@ -5,3 +5,5 @@ Potrebno je napraviti sljedeću aplikaciju:
 3. Postaviti App komponentu kao Context Provider i poslati neki tekst i broj
 4. Postaviti zadnju komponentu kao Context Consumer
 5. U komponenti ispisati na ekranu tekst koji je poslan preko Context-a
+
+- Napraviti ću kasnije, kad naučim context
