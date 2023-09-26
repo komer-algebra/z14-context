@@ -26,7 +26,9 @@ function App() {
       <Paragraph korisnost="unutar app-a">
         <Paragraph korisnost="unutar paragraph-a unutar app-a">
           <Paragraph korisnost="unutar paragraph-a unutar paragraph-a unutar app-a">
-            <ConsumerParagraph />
+            <ConsumerParagraph>
+              ...i nalazi se unutar paragraph-a unutar paragraph-a unutar paragraph-a unutar app-a?
+            </ConsumerParagraph>
           </Paragraph>
         </Paragraph>
       </Paragraph>
