@@ -1,11 +1,9 @@
-import { useState, createContext } from 'react';
-import CountButton from './components/CountButton';
-import Paragraph from './components/Paragraph';
-import ConsumerParagraph from './components/ConsumerParagraph';
+import { useState } from 'react';
+
+import ContextProviderComponent from './ContextProviderComponent';
+import { CountButton, Paragraph, ConsumerParagraph } from './components';
 
 import './App.css'
-
-export const ContextName = createContext(['', 0]);
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,7 +11,7 @@ function App() {
   const useless = "beskoristan";
 
   return (
-    <ContextName.Provider value={['čokolade', 3]}>
+    <ContextProviderComponent value={['čokolade', 3]}>
       <h1>App kao &quot;context provider&quot;</h1>
 
       <h2>Četiri različita elementa ugniježđena u App-u</h2>
@@ -28,12 +26,17 @@ function App() {
         <Paragraph korisnost="unutar paragraph-a unutar app-a">
           <Paragraph korisnost="unutar paragraph-a unutar paragraph-a unutar app-a">
             <ConsumerParagraph>
-              ...i nalazi se unutar paragraph-a unutar paragraph-a unutar paragraph-a unutar app-a?
+              ...i nalazi se
+              unutar paragraph-a
+              unutar paragraph-a
+              unutar paragraph-a
+              unutar ContentProviderComponent-a
+              unutar app-a?
             </ConsumerParagraph>
           </Paragraph>
         </Paragraph>
       </Paragraph>
-    </ContextName.Provider>
+    </ContextProviderComponent>
   );
 }
 
