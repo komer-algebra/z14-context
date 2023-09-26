@@ -1,12 +1,12 @@
-import PropTypes, { string } from 'prop-types'
-export default function CountButton({count, setCount, korisnost}) {
+import PropTypes, { string } from 'prop-types';
+export default function CountButton({count, incCount, korisnost}) {
   return (
-    <button onClick={setCount}>Ovaj count-button još isto {korisnost}: {count}</button>
-  )
+    <button onClick={incCount}>Ovaj count-button je isto {korisnost}: {count}</button>
+  );
 }
 
 CountButton.propTypes = {
   count: PropTypes.number,
-  setCount: PropTypes.func,
+  incCount: PropTypes.func,
   korisnost: string
 }
