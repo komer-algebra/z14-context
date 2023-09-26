@@ -1,7 +1,5 @@
 import { useState, createContext } from 'react';
-import CountButton from './components/CountButton';
-import Paragraph from './components/Paragraph';
-import ConsumerParagraph from './components/ConsumerParagraph';
+import { CountButton, Paragraph, ConsumerParagraph } from './components';
 
 import './App.css'
 
@@ -28,7 +26,11 @@ function App() {
         <Paragraph korisnost="unutar paragraph-a unutar app-a">
           <Paragraph korisnost="unutar paragraph-a unutar paragraph-a unutar app-a">
             <ConsumerParagraph>
-              ...i nalazi se unutar paragraph-a unutar paragraph-a unutar paragraph-a unutar app-a?
+              ...i nalazi se
+              unutar paragraph-a
+              unutar paragraph-a
+              unutar paragraph-a
+              unutar app-a?
             </ConsumerParagraph>
           </Paragraph>
         </Paragraph>
