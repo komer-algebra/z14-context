@@ -1,10 +1,11 @@
-import { useState } from 'react';
-import ContextName from './Context';
+import { useState, createContext } from 'react';
 import CountButton from './components/CountButton';
 import Paragraph from './components/Paragraph';
 import ConsumerParagraph from './components/ConsumerParagraph';
 
 import './App.css'
+
+export const ContextName = createContext(['', 0]);
 
 function App() {
   const [count, setCount] = useState(0);

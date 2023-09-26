@@ -9,5 +9,6 @@ export default function Paragraph({korisnost, children}) {
 }
 
 Paragraph.propTypes = {
-  korisnost: PropTypes.string
+  korisnost: PropTypes.string,
+  children: PropTypes.node
 }

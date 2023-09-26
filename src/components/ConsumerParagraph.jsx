@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useContext } from "react";
-import ContextName from "../Context";
+import { ContextName } from "../App";
 
 export default function ConsumerParagraph({ children }) {
   const [text, number] = useContext(ContextName);
