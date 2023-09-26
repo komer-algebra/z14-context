@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ContextName from './components/ContextComponent';
+import ContextName from './Context';
 import CountButton from './components/CountButton';
 import Paragraph from './components/Paragraph';
 import ConsumerParagraph from './components/ConsumerParagraph';
